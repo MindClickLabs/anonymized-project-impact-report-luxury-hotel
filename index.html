@@ -2,7 +2,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<title>Luxury Hotel</title>
+<title>EXAMPLE – Luxury Hotel</title>
 <style>
   :root{
     --green:#003E32; --mid:#006F62; --sage:#63A09A; --pale:#A5DFD3; --linen:#F9F2EC;
@@ -195,6 +195,9 @@
   .mred + .mcbtn{margin-top:6px;}
   .pnum.np{background:transparent!important;color:var(--mid)!important;border:1.5px dashed var(--sage);}
   .npic{display:inline-block;margin-left:6px;font-size:11px;font-style:italic;color:var(--muted);}
+  body{position:relative;}
+  .wm{position:absolute;inset:0;z-index:9999;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22560%22%20viewBox%3D%220%200%20640%20560%22%3E%3Cg%20font-family%3D%22Plus%20Jakarta%20Sans%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20font-weight%3D%22800%22%20font-size%3D%2288%22%20letter-spacing%3D%2210%22%20fill%3D%22%23003E32%22%20fill-opacity%3D%220.075%22%20text-anchor%3D%22middle%22%3E%3Ctext%20transform%3D%22translate%28160%20140%29%20rotate%28-35%29%22%3EEXAMPLE%3C/text%3E%3Ctext%20transform%3D%22translate%28480%20420%29%20rotate%28-35%29%22%3EEXAMPLE%3C/text%3E%3C/g%3E%3C/svg%3E");background-repeat:repeat;background-size:640px 560px;-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  @media(max-width:600px){.wm{background-size:420px 368px;}}
   .mcbtn{display:inline-flex;align-items:center;gap:4px;white-space:nowrap;margin-top:6px;border:1px solid var(--line);background:#fff;border-radius:999px;padding:3px 10px 3px 7px;font:inherit;font-size:11.5px;font-weight:700;color:var(--mid);cursor:pointer;}
   .mcbtn:hover:not(:disabled){border-color:var(--sage);}
   .mcbtn:disabled{opacity:.5;cursor:default;}
@@ -1038,4 +1041,5 @@ document.querySelectorAll('.pcard').forEach(c=>{
 })();
 </script>
 
+<div class="wm" aria-hidden="true"></div>
 </body></html>
